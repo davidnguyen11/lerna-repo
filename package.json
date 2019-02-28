@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev": "./.npm-scripts/dev.sh",
+    "prod": "./.npm-scripts/prod.sh"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.0"
+  }
+}

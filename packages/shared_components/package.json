@@ -1,0 +1,29 @@
+{
+  "name": "@kchiku/shared_components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "prebuild": "rimraf dist/*",
+    "build": "babel components --out-dir dist",
+    "prod": "babel components --out-dir dist",
+    "dev": "babel --watch components --out-dir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^4.1.13",
+    "babel-loader": "^8.0.5",
+    "rimraf": "^2.6.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@kchiku/helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist/*",
+    "build": "rollup --config",
+    "prod": "babel src --out-dir dist",
+    "dev": "babel --watch src --out-dir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.2.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^4.0.4"
+  }
+}
